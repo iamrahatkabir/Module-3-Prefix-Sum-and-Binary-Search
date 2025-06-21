@@ -58,7 +58,7 @@ int main()
 {
     int n;
     cin >> n;
-    vector<int> a(n);
+    int a[n];
 
     for(int i = 0; i < n; i++)
     {
@@ -72,7 +72,10 @@ int main()
 
 
     //Array must has to be sorted to implement Binary Search;
-    //Binary Search
+    //Binary Search using o(logN);
+
+    sort(a,a+n);
+
     int l = 0;
     int r = n-1;
 
