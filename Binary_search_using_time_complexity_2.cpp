@@ -78,7 +78,7 @@ int main()
 
     while(l <= r)
     {
-        int mid = (l+r)/2;
+        int mid = (l+r)/2; //finding the middle index to do binary search if A[MID] is grater(>) than VALUE we will ignore right hand side values of MID index & if A[MID] is less(<) than value we will ignore the left hand side values of MID index;
         if(a[mid] == value)
         {
             flag = 1;
@@ -86,11 +86,11 @@ int main()
         }
         else if(a[mid] > value)
         {
-            r = mid-1;
+            r = mid-1; //Changing the index of r and moving it backword if a[mid] is grater(>) than Value
         }
         else if(a[mid] < value)
         {
-            l = mid+1;
+            l = mid+1; //Changing the index of r and moving it forword if a[mid] is less(<) than Value;
         }
 
     }
