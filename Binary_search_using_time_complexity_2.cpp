@@ -81,6 +81,7 @@ int main()
 
     while(l <= r)
     {
+        //using o(logN);
         int mid = (l+r)/2; //finding the middle index to do binary search if A[MID] is grater(>) than VALUE we will ignore right hand side values of MID index & if A[MID] is less(<) than value we will ignore the left hand side values of MID index;
         if(a[mid] == value)
         {
